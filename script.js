@@ -37,9 +37,7 @@ inputForm.onsubmit = (event) => {
 
 inputTxt.addEventListener("change", (e) => {
   updateURLParam("q", e.target.value);
-  console.log(e.target.value);
 });
-console.log(urlParams.get("q"));
 
 function updateURLParam(key, value) {
   const url = new URL(window.location);
