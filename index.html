@@ -7,13 +7,48 @@
     <title>Speech Synthesis Utterance</title>
   </head>
   <body>
-    <form>
-      <label for="inputTxt">הכנס טקסט:</label>
-      <input type="text" id="inputTxt" />
-      <select></select>
-      <button type="submit">GO</button>
-    </form>
+    <div class="container">
+      <form>
+        <label for="inputTxt">הכנס טקסט:</label>
+        <input type="text" id="inputTxt" />
 
+        <select></select>
+
+        <button type="submit">GO</button>
+      </form>
+
+      <div class="controllers-container">
+<div class="controller">
+        <label for="volume">עוצמת קול:</label>
+        <input
+          type="range"
+          min="0"
+          max="1"
+          step="0.1"
+          value="0.5"
+          id="volume"
+          class="yellow-range"
+        />
+    </div>
+    <div class="controller">
+
+      <label for="speed">מהירות:</label>
+      <input
+        type="range"
+        min="0.1"
+        max="5"
+        step="0.1"
+        value="1"
+        id="speed"
+        class="yellow-range"
+      />
+    </div>
+    </div>
+
+
+
+</div>
+  </div>
     <script src="./script.js"></script>
   </body>
 </html>

@@ -14,9 +14,23 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
+
+  line-height: 5rem;
 }
 
 select,
 input {
   font-size: 1rem;
+}
+
+.yellow-range {
+  accent-color: orange;
+}
+
+.red-range {
+  accent-color: #e28686;
+}
+
+.green-range {
+  accent-color: green;
 }
